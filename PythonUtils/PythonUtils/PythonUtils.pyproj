@@ -22,7 +22,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="bayes.py" />
+    <Compile Include="knn.py" />
+    <Compile Include="logRegres.py" />
     <Compile Include="Main.py" />
+    <Compile Include="treePlotter.py" />
+    <Compile Include="trees.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>

@@ -1,4 +1,10 @@
-arr = ["1",2,3,4]
-arr2 = arr[1:3]
-arr2[0] = 0;
-print(arr)
+import logRegres
+from numpy import *
+
+logRegres.deaw()
+dataArr,labelMat = logRegres.loadDataSet()
+
+weights = logRegres.stocGradAscent0(array(dataArr), labelMat)
+weights = logRegres.gradAscent(dataArr, labelMat)
+
+logRegres.plotBestFit(weights.getA())
